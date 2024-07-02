@@ -7,3 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : konst
 */
 
+.img-thumbnail{
+    width: 50%;
+    height: 50%;
+}

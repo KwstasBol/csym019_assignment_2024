@@ -1,0 +1,19 @@
+{
+  "name": "csym019_assignment_2024",
+  "version": "1.0.0",
+  "description": "UON package ",
+  "main": "course.js",
+  "type":"module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Konstantinos Bolotis",
+  "license": "ISC",
+  "dependencies": {
+    "@exodus/schemasafe": "^1.3.0",
+    "ajv": "^8.16.0"
+  }
+}
