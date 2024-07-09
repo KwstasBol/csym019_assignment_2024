@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "UON package ",
   "main": "course.js",
-  "type":"module",
+  "type": "module",
   "directories": {
     "test": "test"
   },
@@ -11,8 +11,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Konstantinos Bolotis",
-  "license": "ISC",
-  "dependencies": {
-   
-  }
+  "license": "ISC"
 }

@@ -1,5 +1,9 @@
-//Import the jema.js schema to validate json
 
+
+var selectedCurrency = "pound";
+var previousCurrency = "pound";
+
+  var coursesJson = [];
 
 setTimeout(getJsonDataAndPopulateTable, 500);
 
@@ -21,6 +25,7 @@ function getJsonDataAndPopulateTable() {
             var jsonTextData = this.responseText;
             //Parsed text data to array
             var courses = JSON.parse(jsonTextData);
+            coursesJson = courses;
             
             xhttp.open("GET", "courseSchema.json");
             xhttp.send();
@@ -45,9 +50,41 @@ function getJsonDataAndPopulateTable() {
 }
 
  function changeCurrency(){
-    //var table = $("#coursesTable");
-    var x  = 3;
-    console.log("Changed currency");
+    //Get from the onchange event of the select element, the selected value & assign to the global variable selectedCurrency
+     selectedCurrency = document.getElementById("currencySelector").value;
+     //previousCurrency = selectedCurrency;
+   // $(".priceTd").html(convertPriceCurrency());
+    
+    $('.priceTd').each(function(i, td) {
+        console.log(i);
+    var price = coursesJson[i].priceUkFull;    
+    var newPrice = convertPriceCurrency(price); 
+    $(td).html(newPrice);
+});
+     
+     
+     
+     //console.log(courses);
+     console.log("SELECTED:"+selectedCurrency);
+     //populateTableWithCourses(courses);
+}
+
+function convertPriceCurrency(price){
+    var gbpToEur = 1.18;
+    var gbpToDol = 1.28;
+
+    
+
+     if(selectedCurrency === "euro"){
+        return Math.floor(price * gbpToEur);
+    }
+      else if(selectedCurrency === "dollar"){
+        return Math.floor(price * gbpToDol);
+    }
+    
+    else{
+        return price;
+    }
 }
 
 function populateTableWithCourses(courses) {
@@ -85,7 +122,7 @@ function populateTableWithCourses(courses) {
                     + "<td>" + name + "</td>"
                     + "<td>" + code + "</td>"
                     + "<td>" + codeWithFoundation + "</td>"
-                    + "<td>" + priceUkFull + "</td>"
+                    + "<td class='priceTd'>" + priceUkFull + "</td>"
                     + "<td>" + duration + "</td>"
                     + "<td>" + starting + "</td>"
                     + "<td>" + location + "</td>"
@@ -100,13 +137,14 @@ function populateTableWithCourses(courses) {
 }
 
 function validateJsonSchema(coursesJsonSchema,coursesJson){
-const schema = new Schema(coursesJsonSchema);
+    //TODO: Implement logic
+/*const schema = new Schema(coursesJsonSchema);
 var isValid = schema.validate(coursesJson);
 const errors = schema.errors('L-'); 
 for (const error of errors) {
     console.log(error.message);
     // "L-" does not match minLength:3
     // "L-" does not match pattern:^[a-zA-Z]+$
-}
-return isValid;
+}*/
+return true;
 }
