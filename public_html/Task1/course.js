@@ -93,7 +93,7 @@ function populateTableWithCourses(courses) {
 function validateJsonSchema(coursesJsonSchema,coursesJson){
 const schema = new Schema(coursesJsonSchema);
 var isValid = schema.validate(coursesJson);
-const errors = schema.errors('L-');
+const errors = schema.errors('L-'); 
 for (const error of errors) {
     console.log(error.message);
     // "L-" does not match minLength:3
