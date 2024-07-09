@@ -1,5 +1,5 @@
 //Import the jema.js schema to validate json
-import {Schema} from 'https://cdn.jsdelivr.net/gh/nuxodin/jema.js@x.x.x/schema.min.js';
+
 
 setTimeout(getJsonDataAndPopulateTable, 500);
 
@@ -44,6 +44,12 @@ function getJsonDataAndPopulateTable() {
     }; 
 }
 
+ function changeCurrency(){
+    //var table = $("#coursesTable");
+    var x  = 3;
+    console.log("Changed currency");
+}
+
 function populateTableWithCourses(courses) {
 
     $(document).ready(function () {
@@ -65,19 +71,22 @@ function populateTableWithCourses(courses) {
             var location = courses[i].location;
             var subjectDomain = courses[i].subjectDomain;
             var imageUrl = courses[i].imageUrl;
-
+            var priceUkFull = courses[i].priceUkFull;
+            
             var fullYearsText = "Full Time: " + fullTimeYears + " year(s) \n";
             var fullTimeFoundationYearsText = fullTimeFoundationYears > 0 ? "Full Time Foundation: " + fullTimeFoundationYears + " year(s) \n" : "";
             var partTimeYearsText = partTimeMinYears === partTimeMaxYears ? "Part Time: " + partTimeMaxYears + " year(s) \n" : "Part Time: " + partTimeMinYears + " - " + partTimeMaxYears + " year(s) \n";
 
             var duration = fullYearsText + fullTimeFoundationYearsText + partTimeYearsText;
 
+            
 
             var textToAppend = "<tr>"
+                    + "<td>" + name + "</td>"
                     + "<td>" + code + "</td>"
                     + "<td>" + codeWithFoundation + "</td>"
+                    + "<td>" + priceUkFull + "</td>"
                     + "<td>" + duration + "</td>"
-                    + "<td>" + name + "</td>"
                     + "<td>" + starting + "</td>"
                     + "<td>" + location + "</td>"
                     + "<td>" + subjectDomain + "</td>"
