@@ -28,7 +28,7 @@ function getJsonDataAndPopulateTable() {
              xhttp.onreadystatechange = function () {
                 if (xhttp.readyState === 4 && xhttp.status === 200) {
                     //Get json schema
-                      var jsonSchema = JSON.parse(this.responseText);
+                      var jsonSchema = JSON.parse(this.responseText);  
                     //Validate schema
                       var coursesJsonIsValid = validateJsonSchema(jsonSchema,courses);
 
