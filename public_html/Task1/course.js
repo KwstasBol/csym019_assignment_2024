@@ -1,9 +1,12 @@
 //Import the jema.js schema to validate json
 import {Schema} from 'https://cdn.jsdelivr.net/gh/nuxodin/jema.js@x.x.x/schema.min.js';
 
-setTimeout(getJsonData, 500);
+setTimeout(getJsonDataAndPopulateTable, 500);
 
-function getJsonData() {
+
+
+
+function getJsonDataAndPopulateTable() {
     //1. Create AJAX xmlHttpRequest object
     const xhttp = new XMLHttpRequest();
 
@@ -18,10 +21,27 @@ function getJsonData() {
             var jsonTextData = this.responseText;
             //Parsed text data to array
             var courses = JSON.parse(jsonTextData);
-            populateTableWithCourses(courses);
+            
+            xhttp.open("GET", "courseSchema.json");
+            xhttp.send();
+            
+             xhttp.onreadystatechange = function () {
+                if (xhttp.readyState === 4 && xhttp.status === 200) {
+                    //Get json schema
+                      var jsonSchema = JSON.parse(this.responseText);
+                    //Validate schema
+                      var coursesJsonIsValid = validateJsonSchema(jsonSchema,courses);
+
+                    //Populate the table with the courses if the file is valid based on the json schema, else alert with error
+                      if(coursesJsonIsValid){
+                          populateTableWithCourses(courses);
+                      }
+                      else{
+                          alert("The courses json file is invalid!");
+                      }
+                }};          
         }
-    };
-    
+    }; 
 }
 
 function populateTableWithCourses(courses) {
@@ -70,10 +90,14 @@ function populateTableWithCourses(courses) {
     });
 }
 
-function validateJsonSchema(){
-const schema = new Schema({
-    type: 'string',
-    minLength: 3,
-    pattern: '^[a-zA-Z]+$'
-});
+function validateJsonSchema(coursesJsonSchema,coursesJson){
+const schema = new Schema(coursesJsonSchema);
+var isValid = schema.validate(coursesJson);
+const errors = schema.errors('L-');
+for (const error of errors) {
+    console.log(error.message);
+    // "L-" does not match minLength:3
+    // "L-" does not match pattern:^[a-zA-Z]+$
+}
+return isValid;
 }

@@ -13,7 +13,6 @@
   "author": "Konstantinos Bolotis",
   "license": "ISC",
   "dependencies": {
-    "@exodus/schemasafe": "^1.3.0",
-    "ajv": "^8.16.0"
+   
   }
 }
