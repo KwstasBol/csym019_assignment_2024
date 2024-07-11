@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Courses",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "code": {
+        "type": "string",
+        "description": "The course Ucas code"
+      },
+      "codeWithFoundation": {
+        "type": "string",
+        "description": "The course Ucas code with foundation"
+      },
+      "undergraduate": {
+        "type": "boolean",
+        "description": "Defines if course is bsc/ba or msc"
+      },
+      "durationFull": {
+        "type": "integer",
+        "description": "The full time course duration",
+        "minimum": 0
+      },
+      "durationFullFoundation": {
+        "type": "integer",
+        "description": "The full time course duration with foundation",
+        "minimum": 0
+      },
+      "durationPartMin": {
+        "type": "integer",
+        "description": "The minimumimum part time duration",
+        "minimum": 0
+      },
+      "durationPartMax": {
+        "type": "integer",
+        "description": "The maximum part time duration",
+        "minimum": 0
+      },
+      "location": {
+        "type": "string",
+        "description": "The location that course takes place in"
+      },
+      "startingPeriod": {
+        "type": "string",
+        "description": "The starting month(s)"
+      },
+      "subjectDomain": {
+        "type": "string",
+        "description": "The course domain(e.g. Computer Science)"
+      },
+      "name": {
+        "type": "string",
+        "description": "The course name"
+      },
+      "overview": {
+        "type": "string",
+        "description": "The course overview"
+      },
+      "highlights": {
+        "type": "string",
+        "description": "The highlights for the course entry"
+      },
+      "courseDetails": {
+        "type": "string",
+        "description": "The course details"
+      },
+      "entryRequirements": {
+        "type": "string",
+        "description": "The requirements for the course "
+      },
+      "currency": {
+        "description": "The course overview",
+        "enum": [
+          "pound",
+          "euro",
+          "dollar"
+        ]
+      },
+      "priceUkFull": {
+        "type": "integer",
+        "description": "The price for UK students full time",
+        "minimum": 0
+      },
+      "priceUkPart": {
+        "type": "integer",
+        "description": "The price for UK students part time",
+        "minimum": 0
+      },
+      "priceUkPartCreditModules": {
+        "type": "integer",
+        "description": "The credit modules for part time price",
+        "minimum": 0
+      },
+      "priceUkIntegrated": {
+        "type": "integer",
+        "description": "The price for UK students integrated year",
+        "minimum": 0
+      },
+      "priceIntFull": {
+        "type": "integer",
+        "description": "The price for international students full time",
+        "minimum": 0
+      },
+      "priceIntIntegrated": {
+        "type": "integer",
+        "description": "The price for international students integrated year",
+        "minimum": 0
+      },
+      "accreditation": {
+        "type": "string",
+        "description": "The course accreditation"
+      },
+      "studentPerks": {
+        "type": "string",
+        "description": "The perks of the course for the students"
+      },
+      "ify": {
+        "type": "string",
+        "description": "Details about the integrated foundation year"
+      },
+      "placements": {
+        "type": "string",
+        "description": "The course placements"
+      },
+      "faqs": {
+        "type": "string",
+        "description": "Frequent questions and answers"
+      },
+      "imageUrl": {
+        "type": "string",
+        "format": "uri",
+        "description": "The image url of the course"
+      }
+    },
+    "additionalProperties": false
+  },
+  "uniqueItems": true
+}
