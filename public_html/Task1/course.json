@@ -7,21 +7,14 @@
     "durationFullFoundation": 4,
     "durationPartMin": 4,
     "durationPartMax": 6,
-    "starting": "September",
+    "startingPeriod": "September",
     "location": "Waterside",
     "subjectDomain": "Computer Science",
     "name": "Business Computing BSc (Hons)",
     "overview": "The University of Northampton’s Business Computing BSc approaches computing from a professional perspective and is designed to tackle the application of technology in a commercial context",
-    "highlights": [
-      "Emphasis on hands-on practice",
-      "Employability and computing industry focused."
-    ],
+    "highlights": "Emphasis on hands-on practice, Employability and computing industry focused.",
     "courseDetails": "The Business Computing BSc degree shares a common first year with other Computing pathways, with flexible progression into the second year.",
-    "entryRequirements": [
-      "BCC at A-Level or,",
-      "DMM at BTEC/Cambridge Technical or,",
-      "Pass (C and above) at T Level"
-    ],
+    "entryRequirements":"BCC at A-Level or,DMM at BTEC/Cambridge Technical or, Pass (C and above) at T Level",
     "currency": "pound",
     "priceUkFull": 9250,
     "priceUkPart": 1540,
@@ -44,21 +37,14 @@
     "durationFullFoundation": 4,
     "durationPartMin": 4,
     "durationPartMax": 6,
-    "starting": "September",
+    "startingPeriod": "September",
     "location": "Waterside",
     "subjectDomain": "Computer Science",
     "name": "Artificial Intelligence and Data Science BSc (Hons)",
     "overview": "Artificial intelligence and data science have a pivotal role in driving a new era of innovation in many fields. This includes computer science, public health, manufacturing, transportation, and many other areas.",
-    "highlights": [
-      "Progression data science courses available on modern AI and machine learning",
-      "The BSc Artificial Intelligence degree is a member of Amazon Web Services (AWS) Academy"
-    ],
+    "highlights": "Progression data science courses available on modern AI and machine learning. The BSc Artificial Intelligence degree is a member of Amazon Web Services (AWS) Academy",
     "courseDetails": "This degree in artificial intelligence and data science degree will equip you with a range of knowledge and practical skills required to establish your career. They can aid many career paths, such as a machine learning software engineer, solution architect, project manager or AI research scientist.",
-    "entryRequirements": [
-      "BCC at A-Level or,",
-      "DMM at BTEC/Cambridge Technical or,",
-      "Pass (C and above) at T Level"
-    ],
+    "entryRequirements": "BCC at A-Level or, DMM at BTEC/Cambridge Technical or, Pass (C and above) at T Level",
     "currency": "pound",
     "priceUkFull": 9250,
     "priceUkPart": 1540,
@@ -81,19 +67,14 @@
     "durationFullFoundation": 0,
     "durationPartMin": 0,
     "durationPartMax": 2,
-    "starting": "September,February",
+    "startingPeriod": "September,February",
     "location": "Waterside",
     "subjectDomain": "Computer Science",
     "name": "Computing (Internet Technology and Security) MSc",
     "overview": "he University of Northampton’s Computing (Internet Technology and Security) MSc course allows you to study cyber security and cryptography. You will have the opportunity to develop your research and analytical skills.",
-    "highlights": [
-      "Access to PC and Linux workstation computers on the MSc Computing (Internet Technology and Security) course"
-    ],
+    "highlights":"Access to PC and Linux workstation computers on the MSc Computing (Internet Technology and Security) course",
     "courseDetails": "Today’s society relies on computing and Internet technology. This creates a high demand for internet security products and services as well as people with the knowledge and expertise to design, implement and manage secure internet applications. While the University of Northampton’s Computing (Internet Technology and Security) MSc pathway is mostly technical in focus, you will also learn about the business context and develop interpersonal skills that are vital to problem solving in business.",
-    "entryRequirements": [
-      "A recognised first or second class honours degree from a UK university or international equivalent in a relevant subject",
-      " Working knowledge of computers and networks"
-    ],
+    "entryRequirements":"A recognised first or second class honours degree from a UK university or international equivalent in a relevant subject ,working knowledge of computers and networks",
     "currency": "pound",
     "priceUkFull": 8250,
     "priceUkPart": 920,
@@ -116,21 +97,14 @@
     "durationFullFoundation": 4,
     "durationPartMin": 4,
     "durationPartMax": 6,
-    "starting": "September",
+    "startingPeriod": "September",
     "location": "Waterside",
     "subjectDomain": "Biological Sciences",
     "name": "Biochemistry BSc (Hons)",
     "overview": "Biochemistry underpins the very nature of our existence and acquiring skills and knowledge of this subject will help you solve key biological problems. Our Biochemistry degree is aimed at helping you understand the interconnectedness of chemistry, physics and biology by exploring a range of different topics. ",
-    "highlights": [
-      "Modules in emerging subjects such as bioinformatics",
-      "Collaborate with international scientists from both academic and industrial backgrounds"
-    ],
+    "highlights": "Modules in emerging subjects such as bioinformatics, Collaborate with international scientists from both academic and industrial backgrounds",
     "courseDetails": "This degree in Biochemistry gives you a firm understanding of the underlying principles for biochemicals reactions that occur within living organisms. There are key biological themes that create the core of this degree that includes, biochemistry, genetics and microbiology.",
-    "entryRequirements": [
-      "BCC at A-Level or,",
-      "DMM at BTEC/Cambridge Technical or,",
-      "Pass (C and above) at T Level"
-    ],
+    "entryRequirements":"BCC at A-Level or, DMM at BTEC/Cambridge Technical or Pass (C and above) at T Level",
     "currency": "pound",
     "priceUkFull": 9250,
     "priceUkPart": 1540,
@@ -153,19 +127,14 @@
     "durationFullFoundation": 0,
     "durationPartMin": 1,
     "durationPartMax": 3,
-    "starting": "September",
+    "startingPeriod": "September",
     "location": "Waterside",
     "subjectDomain": "Biological Sciences",
     "name": "Molecular Medicine MSc",
     "overview": "The University of Northampton’s Molecular Medicine MSc is aimed at individuals with prior knowledge of, or keen interest in, molecular medicine, genetics and genomics, and through our supportive environment you will develop your knowledge and understanding of key aspects of molecular medicine. You will have the opportunity to tailor your studies to your own interests through a selection of relevant modules.",
-    "highlights": [
-      "Subject specific modules in molecular medicine to meet your career aspirations.",
-      "Well-equipped biomedical science laboratories for learning and research."
-    ],
+    "highlights":"Subject specific modules in molecular medicine to meet your career aspirations. Well-equipped biomedical science laboratories for learning and research.",
     "courseDetails": "Students study six modules over one year full time, or two years if studying part time on this molecular medicine masters. You will follow subject specific and Research Methods modules and undertake a research project in your area of interest that gives an individual focus, whilst also integrating you into the Molecular Biosciences Research Group within the University’s Research Centre for Physical Activity and Life Sciences. You can find out more about the research interests and expertise of the Bioscience team on the Department of Science research profiles page.",
-    "entryRequirements": [
-      "A minimum 2.2 class honours degree in a Biological Science from a UK university or international equivalent"
-    ],
+    "entryRequirements": "A minimum 2.2 class honours degree in a Biological Science from a UK university or international equivalent",
     "currency": "pound",
     "priceUkFull": 8250,
     "priceUkPart": 920,
@@ -188,21 +157,14 @@
     "durationFullFoundation": 4,
     "durationPartMin": 4,
     "durationPartMax": 6,
-    "starting": "September,January",
+    "startingPeriod": "September,January",
     "location": "Waterside",
     "subjectDomain": "Business Management and Entrepreneurship ",
     "name": "Business Management BA (Hons)",
     "overview": "The University of Northampton’s innovative BA (Hons) Business Management Degree, accredited by the Chartered Management Institute (CMI), takes a practical approach to exploring contemporary business practices, contexts and debates. You will engage with a broad range of business and management challenges and opportunities allowing you to develop in-depth knowledge alongside industry-relevant skills.",
-    "highlights": [
-      "Subject pathways at stage two and three of the Business Management degree, allowing you to specialise in your area of interest.",
-      "Graduate with a Chartered Management Institute (CMI) Diploma in Management and Leadership*, a respected professional qualification proven to boost earnings potential."
-    ],
+    "highlights":"Subject pathways at stage two and three of the Business Management degree, allowing you to specialise in your area of interest.Graduate with a Chartered Management Institute (CMI) Diploma in Management and Leadership*, a respected professional qualification proven to boost earnings potential.",
     "courseDetails": "The BA Business Management degree provides strong insight into business administration and the operational workings of different types of organisations to enable both strategic and practical skills development.",
-    "entryRequirements": [
-      "BCC at A-Level or,",
-      "DMM at BTEC/Cambridge Technical or,",
-      "Pass (C and above) at T Level"
-    ],
+    "entryRequirements": "BCC at A-Level or,DMM at BTEC/Cambridge Technical or Pass (C and above) at T Level",
     "currency": "pound",
     "priceUkFull": 9250,
     "priceUkPart": 1540,
@@ -225,21 +187,14 @@
     "durationFullFoundation": 0,
     "durationPartMin": 1,
     "durationPartMax": 3,
-    "starting": "September",
+    "startingPeriod": "September",
     "location": "Waterside",
     "subjectDomain": "Business Management and Entrepreneurship ",
     "name": "Business Analytics MSc",
     "overview": "In today’s data-driven landscape, businesses are facing a pressing challenge: finding graduates who possess the right qualifications and skills to tackle complex analytical tasks. This demand for skilled business analysts continues to soar, creating a significant gap between the abilities of recent graduates and the requirements of employers. That’s where our cutting-edge MSc Business Analytics programme comes in.",
-    "highlights": [
-      "The course offers the opportunity to gain experience in the areas of Data Science in Practice, Emerging Technologies, Leadership and Digital Transformation, Forecasting and Decision Science.",
-      "Participative and interactive activities designed to consolidate and develop students’ understanding,"
-    ],
+    "highlights": "The course offers the opportunity to gain experience in the areas of Data Science in Practice, Emerging Technologies, Leadership and Digital Transformation, Forecasting and Decision Science.Participative and interactive activities designed to consolidate and develop students’ understanding",
     "courseDetails": "Throughout the course, you will delve into a wide range of topics, including data science tools and techniques, leadership skills, data visualisation for decision science, and project management concepts. You will also have the option to work on projects sponsored by the UK Ministry of Defence (MoD). With this diverse knowledge base at your disposal, you will be equipped to extract valuable insights from data, make informed decisions, and drive organisational success.",
-    "entryRequirements": [
-      "Graduates of Aerospace",
-      "Graduates of Robotics",
-      "Graduates of Structural Engineering"
-    ],
+    "entryRequirements":"Graduates of Aerospace,Graduates of Robotics, Graduates of Structural Engineering",
     "currency": "pound",
     "priceUkFull": 8250,
     "priceUkPart": 0,
@@ -262,21 +217,14 @@
     "durationFullFoundation": 4,
     "durationPartMin": 4,
     "durationPartMax": 6,
-    "starting": "September",
+    "startingPeriod": "September",
     "location": "Waterside",
     "subjectDomain": "E-sports and Game Development",
     "name": "Advertising & Digital Marketing BA (Hons)",
     "overview": "The BA Animation degree at the University of Northampton focuses on preparing students for a career in animation, including specialist areas such as motion capture, visual effects, storyboarding, 2D and 3D animation for video games and narrative development. You will be introduced to the key points in the creative process, from initial concepting through to the production of final animations. Animation degree students will also develop the technical skills required to create professional standard animations for a variety of digital media formats, such as film, TV, video games and augmented or virtual reality.",
-    "highlights": [
-      "Up to date workstation hardware and software, including Wacom Cintiq Pros.",
-      "Opportunities to take part in live projects and competitions for BA animation students."
-    ],
+    "highlights":"Up to date workstation hardware and software, including Wacom Cintiq Pros.Opportunities to take part in live projects and competitions for BA animation students.",
     "courseDetails": "Throughout your BA Animation degree, you will focus on the production of professional standard animation and visual effects for a variety of digital media, such as film, tv, web-based marketing and video games. You will also be exposed to the whole life cycle of animation production from the initial ideas process, through narrative development, to creation of the final production. You will work with industry-trained tutors to ensure you understand the requirements of animation production processes for specific media platforms and markets.",
-    "entryRequirements": [
-      "BCC at A-Level or,",
-      "DMM at BTEC/Cambridge Technical or,",
-      "Pass (C and above) at T Level"
-    ],
+    "entryRequirements": "BCC at A-Level or,DMM at BTEC/Cambridge Technical or,Pass (C and above) at T Level",
     "currency": "pound",
     "priceUkFull": 9250,
     "priceUkPart": 1540,
@@ -299,20 +247,14 @@
     "durationFullFoundation": 0,
     "durationPartMin": 2,
     "durationPartMax": 2,
-    "starting": "September",
+    "startingPeriod": "September",
     "location": "Waterside",
     "subjectDomain": "Engineering",
     "name": "Advanced Design and Manufacturing MSc",
     "overview": "The University of Northampton’s Advanced Design and Manufacturing MSc addresses the complete life cycle of a product or process, from conception through to design and manufacture to disposal. This highly applied programme develops students’ knowledge and understanding of the scientific principles underpinning engineering in the field of design and manufacturing, and of the accompanying legal, ethical and professional considerations. There is a strong focus on integrating current research and developments into learning and teaching.",
-    "highlights": [
-      "The Advanced Design and Manufacturing MSc offers the opportunity to examine emerging concepts such as Digital Manufacturing and industry 4.0",
-      "Course accredited by IMechE (Institution of Mechanical Engineers)"
-    ],
+    "highlights": "The Advanced Design and Manufacturing MSc offers the opportunity to examine emerging concepts such as Digital Manufacturing and industry 4.0.Course accredited by IMechE (Institution of Mechanical Engineers)",
     "courseDetails": "This Advanced Design and Manufacturing MSc programme has been developed to meet the needs of companies and industry in the UK and overseas. It is specifically designed to increase the employability of its learners in a design and manufacturing context by identifying new service, strategy and product opportunities, and conducting projects in collaboration with industrial partners. This manufacturing design programme covers areas such as digital manufacturing and industry 4.0, 3D printing and artificial intelligence.",
-    "entryRequirements": [
-      "A recognised first or second class honours degree from a UK university or international equivalent in a relevant subject area",
-      "Partial knowledge of Engineering"
-    ],
+    "entryRequirements":"A recognised first or second class honours degree from a UK university or international equivalent in a relevant subject area.Partial knowledge of Engineering",
     "currency": "pound",
     "priceUkFull": 8250,
     "priceUkPart": 4600,
@@ -335,20 +277,14 @@
     "durationFullFoundation": 0,
     "durationPartMin": 1,
     "durationPartMax": 3,
-    "starting": "September",
+    "startingPeriod": "September",
     "location": "Waterside",
     "subjectDomain": "Accounting and Finance",
     "name": "Financial and Investment Analysis MSc",
     "overview": "The University of Northampton’s MSc Financial and Investment Analysis will develop you into a specialist investment professional that can take up challenging roles in investment banking, risk management and fund management. This programme will prepare you to write the CFA® professional exams.",
-    "highlights": [
-      "Industry Placement Option available for the Financial and Investment Analysis MSc degree.",
-      "Hands-on application of skills learnt through simulated trading via the Bloomberg terminals."
-    ],
+    "highlights":"Industry Placement Option available for the Financial and Investment Analysis MSc degree.Hands-on application of skills learnt through simulated trading via the Bloomberg terminals.",
     "courseDetails": "MSc Financial and Investment Analysis provides in-depth theoretical and practical skills for specialist roles in the finance and investment industry. You will develop analytical and critical skills which enables you to tackle simulated real-life problems and challenges in the finance industry. Grounded in ethical and responsible approaches, this programme is aligned to investment and risk management professional bodies and responds to the demands and challenges of the dynamic financial services industry.",
-    "entryRequirements": [
-      "A recognised first or second class honours degree from a UK university or international equivalent in finance, banking, accounting",
-      "Professional Qualifications"
-    ],
+    "entryRequirements":"A recognised first or second class honours degree from a UK university or international equivalent in finance, banking, accounting.Professional Qualifications",
     "currency": "pound",
     "priceUkFull": 8250,
     "priceUkPart": 0,

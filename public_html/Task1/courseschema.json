@@ -41,7 +41,7 @@
         "type": "string",
         "description": "The location that course takes place in"
       },
-      "starting": {
+      "startingPeriod": {
         "type": "string",
         "description": "The starting month(s)"
       },
@@ -58,22 +58,16 @@
         "description": "The course overview"
       },
       "highlights": {
-        "type": "array",
-        "description": "The highlights for the course entry  (defined in bullets)",
-        "items": {
-          "type": "string"
-        }
+        "type": "string",
+        "description": "The highlights for the course entry"
       },
       "courseDetails": {
         "type": "string",
         "description": "The course details"
       },
       "entryRequirements": {
-        "type": "array",
-        "description": "The requirements for the course entry  (defined in bullets)",
-        "items": {
-          "type": "string"
-        }
+        "type": "string",
+        "description": "The requirements for the course ",
       },
       "currency": {
         "description": "The course overview",
