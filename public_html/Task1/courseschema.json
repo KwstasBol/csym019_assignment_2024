@@ -67,7 +67,7 @@
       },
       "entryRequirements": {
         "type": "string",
-        "description": "The requirements for the course ",
+        "description": "The requirements for the course "
       },
       "currency": {
         "description": "The course overview",
