@@ -106,7 +106,7 @@ $coursesSqlRes = getCourses();
                     <td><?php echo $row['ify']?></td>
                     <td><?php echo $row['placements']?></td>
                     <td><?php echo $row['faqs']?></td>
-                    <td><?php echo $row['imageUrl']?></td>   
+                    <td><img class="img-thumbnail" src="<?php echo $row['imageUrl']?>"></td>   
                 <tr> 
              <?php
             }

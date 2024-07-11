@@ -59,8 +59,8 @@
     <input type="text" class="form-control" name="durationPartMax">
     </div>
     <div class="form-group">
-    <label for="starting">Starting:</label>
-    <input type="text" class="form-control" name="starting">
+    <label for="startingPeriod">Starting Period:</label>
+    <input type="text" class="form-control" name="startingPeriod">
     </div>
     <div class="form-group">
     <label for="location">Location:</label>
@@ -129,18 +129,18 @@
     </div>
    <div class="form-group">
     <label for="placements">Placements:</label>
-    <<textarea class="form-control" name="placements"></textarea>
+    <textarea class="form-control" name="placements"></textarea>
     </div>
     <div class="form-group">
     <label for="faqs">FaQs:</label>
-    <<textarea class="form-control" name="faqs"></textarea>
+    <textarea class="form-control" name="faqs"></textarea>
     </div>
     <div class="form-group">
     <label for="imageUrl">Image Url:</label>
     <input type="url" class="form-control" name="imageUrl">
     </div>
     <div class="checkbox">
-    <label><input type="checkbox" name="undergraduate">Undergraduate</label>
+        <label><input type="checkbox" name="undergraduate" checked="true">Undergraduate</label>
     </div>
         <br>
   <button type="submit" class="btn btn-primary">Submit</button>

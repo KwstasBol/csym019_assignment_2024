@@ -10,6 +10,34 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
+$code = $_POST['code'];
+$codeWithFoundation = $_POST['codeWithFoundation'];
+$undergraduate = filter_var($_POST['undergraduate'], FILTER_VALIDATE_BOOLEAN);
+$durationFull = $_POST['durationFull'];
+$durationFullFoundation = $_POST['durationFullFoundation'];
+$durationPartMin = $_POST['durationPartMin'];
+$durationPartMax = $_POST['durationPartMax'];
+$startingPeriod = $_POST['startingPeriod'];
+$location = $_POST['location'];
+$subjectDomain = $_POST['subjectDomain'];
+$name = $_POST['name'];
+$overview = $_POST['overview'];
+$highlights = $_POST['highlights'];
+$courseDetails = $_POST['courseDetails'];
+$entryRequirements = $_POST['entryRequirements'];
+$currency = "pound";
+$priceUkFull = $_POST['priceUkFull'];
+$priceUkPart = $_POST['priceUkPart'];
+$priceUkPartCreditModules = $_POST['priceUkPartCreditModules'];
+$priceUkIntegrated = $_POST['priceUkIntegrated'];
+$priceIntFull = $_POST['priceIntFull'];
+$priceIntIntegrated = $_POST['priceIntIntegrated'];
+$accreditation = $_POST['accreditation'];
+$studentPerks = $_POST['studentPerks'];
+$ify = $_POST['ify'];
+$placements = $_POST['placements'];
+$faqs = $_POST['faqs'];
+$imageUrl = $_POST['imageUrl'];
 
 
 $sql = "INSERT INTO Courses (code, codeWithFoundation, undergraduate, durationFull,durationFullFoundation,durationPartMin,
@@ -17,13 +45,15 @@ $sql = "INSERT INTO Courses (code, codeWithFoundation, undergraduate, durationFu
                              entryRequirements,currency,priceUkFull,priceUkPart,priceUkPartCreditModules,priceUkIntegrated,
                              priceIntFull,priceIntIntegrated,accreditation,studentPerks,ify,placements,faqs,imageUrl)
                              
-       VALUES ('".$_POST['code']."', '".$_POST['codeWithFoundation']."', '".$_POST['undergraduate']."', '".$_POST['durationFull']
-                 .$_POST['durationFullFoundation']."', '".$_POST['durationPartMin']."', '".$_POST['durationPartMax']."', '".$_POST['startingPeriod']
-                 .$_POST['location']."', '".$_POST['subjectDomain']."', '".$_POST['name']."', '".$_POST['overview']
-                 .$_POST['highlights']."', '".$_POST['courseDetails']."', '".$_POST['entryRequirements']."', '".$_POST['currency']
-                 .$_POST['priceUkFull']."', '".$_POST['priceUkPart']."', '".$_POST['priceUkPartCreditModules']."', '".$_POST['priceUkIntegrated']
-                 .$_POST['priceIntFull']."', '".$_POST['priceIntIntegrated']."', '".$_POST['accreditation']."', '".$_POST['studentPerks']
-                 .$_POST['ify']."', '".$_POST['placements']."', '".$_POST['faqs']."', '".$_POST['imageUrl']."')";
+                             
+       VALUES ('".$code."', '".$codeWithFoundation."', '".$undergraduate."', '".$durationFull."',
+               '".$durationFullFoundation."', '".$durationPartMin."', '".$durationPartMax."', '".$startingPeriod."',
+               '".$location."', '".$subjectDomain."', '".$name."', '".$overview."',
+               '".$highlights."', '".$courseDetails."', '".$entryRequirements."', '".$currency."',
+               '".$priceUkFull."', '".$priceUkPart."', '".$priceUkPartCreditModules."', '".$priceUkIntegrated."',
+               '".$priceIntFull."', '".$priceIntIntegrated."', '".$accreditation."', '".$studentPerks."',
+               '".$ify."', '".$placements."', '".$faqs."', '".$imageUrl."'
+               )";
 
 echo $sql;
 if ($conn->query($sql) === TRUE) {
