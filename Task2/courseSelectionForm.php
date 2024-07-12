@@ -1,13 +1,13 @@
 
 <?php
-include 'dbFunctions.php';
 
+include 'dbFunctions.php';
+include 'session.php';
 //Create database tables only if they do not exist
 createDbTables();
 
 //Get courses from sql
 $coursesSqlRes = getCourses();
-
 ?>
  <!DOCTYPE html>
 
@@ -35,6 +35,8 @@ $coursesSqlRes = getCourses();
         <a class="nav-item nav-link active" href="#"><u>Home</u></a>
       <a class="nav-item nav-link" href="./newCourse.php">Add Courses</a>
       <a class="nav-item nav-link" href="./courseReport.php">Create Report</a>
+      <a class="nav-item nav-link" href="./logout.php">Logout <?php echo '('. $login_session.')';?></a>
+      
     </div>
   </div>
 </nav>

@@ -22,7 +22,7 @@ if ( !$mysqli -> query("SELECT  * FROM Users LIMIT 1")) {
     $sql = "CREATE TABLE Users (
             id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
             email VARCHAR(30) NOT NULL,
-            password VARCHAR(30) NOT NULL
+            password VARCHAR(255) NOT NULL
             )";
     
   if ($mysqli->query($sql) === TRUE) {

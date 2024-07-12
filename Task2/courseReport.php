@@ -1,3 +1,7 @@
+<?php
+include 'session.php';
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -19,9 +23,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="./courseSelectionForm.html">Home</a>
-      <a class="nav-item nav-link" href="./newCourse.html">Add Courses</a>
+      <a class="nav-item nav-link" href="./courseSelectionForm.php">Home</a>
+      <a class="nav-item nav-link" href="./newCourse.php">Add Courses</a>
       <a class="nav-item nav-link active" href="#"><u>Create Report</u></a>
+      <a class="nav-item nav-link" href="./logout.php">Logout <?php echo '('. $login_session.')';?></a>
     </div>
   </div>
 </nav>      

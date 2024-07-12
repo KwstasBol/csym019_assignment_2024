@@ -1,4 +1,5 @@
 <?php
+include 'session.php';
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +26,7 @@
       <a class="nav-item nav-link" href="./courseSelectionForm.php">Home </a>
       <a class="nav-item nav-link active" href="#"><u>Add Courses</u></a>
       <a class="nav-item nav-link" href="./courseReport.php">Create Report</a>
+      <a class="nav-item nav-link" href="./logout.php">Logout <?php echo '('. $login_session.')';?></a>
     </div>
   </div>
 </nav>
