@@ -37,112 +37,112 @@ include 'session.php';
   <h3>Add a new course</h3>
   <form action="insertCourse.php" method="POST">
   <div class="form-group">
-    <label for="code">Code:</label>
+      <label for="code"><b>Code:</b></label>
     <input type="text" class="form-control" name="code">
   </div>
   <div class="form-group">
-    <label for="codeWithFoundation">Code with Foundation:</label>
+    <label for="codeWithFoundation"><b>Code with Foundation:</b></label>
     <input type="text" class="form-control" name="codeWithFoundation">
   </div>
     <div class="form-group">
-    <label for="durationFull">Full Duration (Years):</label>
+    <label for="durationFull"><b>Full Duration (Years):</b></label>
     <input type="number"  min="0" value="0" class="form-control" name="durationFull">
     </div>
     <div class="form-group">
-    <label for="durationFullFoundation">Full Duration with Foundation (Years):</label>
+    <label for="durationFullFoundation"><b>Full Duration with Foundation (Years):</b></label>
     <input type="number" min="0" value="0" class="form-control" name="durationFullFoundation">
     </div>
     <div class="form-group">
-    <label for="durationPartMin">Minimum Part Duration (Years):</label>
+    <label for="durationPartMin"><b>Minimum Part Duration (Years):</b></label>
     <input type="number" min="0" value="0" class="form-control" name="durationPartMin">
     </div>
     <div class="form-group">
-    <label for="durationPartMax">Maximum Part Duration (Years):</label>
+    <label for="durationPartMax"><b>Maximum Part Duration (Years):</b></label>
     <input type="number" min="0" value="0" class="form-control" name="durationPartMax">
     </div>
     <div class="form-group">
-    <label for="startingPeriod">Starting Period:</label>
+    <label for="startingPeriod"><b>Starting Period:</b></label>
     <input type="text" class="form-control" name="startingPeriod">
     </div>
     <div class="form-group">
-    <label for="location">Location:</label>
+    <label for="location"><b>Location:</b></label>
     <input type="text" class="form-control" name="location">
     </div>
     <div class="form-group">
-    <label for="subjectDomain">Subject Domain:</label>
+    <label for="subjectDomain"><b>Subject Domain:</b></label>
     <input type="text" class="form-control" name="subjectDomain">
     </div>
     <div class="form-group">
-    <label for="name">Name:</label>
+    <label for="name"><b>Name:</b></label>
     <input type="text" class="form-control" name="name">
     </div>
     <div class="form-group">
-    <label for="overview">Overview:</label>
+    <label for="overview"><b>Overview:</b></label>
     <textarea class="form-control" name="overview"></textarea>
     </div>
    <div class="form-group">
-    <label for="highlights">Highlights:</label>
+    <label for="highlights"><b>Highlights:</b></label>
     <textarea class="form-control" name="highlights"></textarea>
     </div>
     <div class="form-group">
-    <label for="courseDetails">Course Details:</label>
+    <label for="courseDetails"><b>Course Details:</b></label>
     <textarea class="form-control" name="courseDetails"></textarea>
     </div>
      <div class="form-group">
-    <label for="entryRequirements">Entry Requirements:</label>
+    <label for="entryRequirements"><b>Entry Requirements:</b></label>
     <textarea class="form-control" name="entryRequirements"></textarea>
     </div>
     <div class="form-group">
-    <label for="priceUkFull">Price Uk Full:</label>
+    <label for="priceUkFull"><b>Price Uk Full:</b></label>
     <input type="number" min="0" value="0" class="form-control" name="priceUkFull">
     </div>
      <div class="form-group">
-    <label for="priceUkPart">Price Uk Part:</label>
+    <label for="priceUkPart"><b>Price Uk Part:</b></label>
     <input type="number" min="0" value="0" class="form-control" name="priceUkPart">
     </div>
      <div class="form-group">
-    <label for="priceUkPartCreditModules">Price Uk Part Credit Modules:</label>
+    <label for="priceUkPartCreditModules"><b>Price Uk Part Credit Modules:</b></label>
     <input type="number" min="0" value="0" class="form-control" name="priceUkPartCreditModules">
     </div>
      <div class="form-group">
-    <label for="priceUkIntegrated">Price Uk Integrated:</label>
+    <label for="priceUkIntegrated"><b>Price Uk Integrated:</b></label>
     <input type="number" min="0" value="0" class="form-control" name="priceUkIntegrated">
     </div>
      <div class="form-group">
-    <label for="priceIntFull">Price International Full:</label>
+    <label for="priceIntFull"><b>Price International Full:</b></label>
     <input type="number" min="0" value="0" class="form-control" name="priceIntFull">
     </div>
      <div class="form-group">
-    <label for="priceIntIntegrated">Price International Integrated:</label>
+    <label for="priceIntIntegrated"><b>Price International Integrated:</b></label>
     <input type="number" min="0" value="0" class="form-control" name="priceIntIntegrated">
     </div>
     <div class="form-group">
       <div class="form-group">
-    <label for="accreditation">Accreditation:</label>
+    <label for="accreditation"><b>Accreditation:</b></label>
     <textarea class="form-control" name="accreditation"></textarea>
     </div>
     <div class="form-group">
-    <label for="studentPerks">Student Perks:</label>
+    <label for="studentPerks"><b>Student Perks:</b></label>
     <textarea class="form-control" name="studentPerks"></textarea>
     </div>
     <div class="form-group">
-    <label for="ify">Ify:</label>
+    <label for="ify"><b>Ify:</b></label>
     <textarea class="form-control" name="ify"></textarea>
     </div>
    <div class="form-group">
-    <label for="placements">Placements:</label>
+    <label for="placements"><b>Placements:</b></label>
     <textarea class="form-control" name="placements"></textarea>
     </div>
     <div class="form-group">
-    <label for="faqs">FaQs:</label>
+    <label for="faqs"><b>FaQs:</b></label>
     <textarea class="form-control" name="faqs"></textarea>
     </div>
     <div class="form-group">
-    <label for="imageUrl">Image Url:</label>
+    <label for="imageUrl"><b>Image Url:</b></label>
     <input type="url" class="form-control" name="imageUrl">
     </div>
     <div class="checkbox">
-        <label><input type="checkbox" name="undergraduate" checked="true">Undergraduate</label>
+        <label><input type="checkbox" name="undergraduate" checked="true"><b>Undergraduate:</b></label>
     </div>
         <br>
   <button type="submit" class="btn btn-primary">Submit</button>
