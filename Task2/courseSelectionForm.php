@@ -48,7 +48,8 @@ $coursesSqlRes = getCourses();
 
             <tr> 
                 <th><input type="checkbox"  name="select" id="toggleAllCheckbox" onclick="toggleCheckboxes()"></th>
-                <th>Id</th> 
+                <th>Id</th>
+                 <th>ImageUrl</th>
                 <th>Name</th>
                 <th>Overview</th>
                 <th>Highlights</th>
@@ -74,14 +75,14 @@ $coursesSqlRes = getCourses();
                 <th>Student Perks</th>
                 <th>Ify</th>
                 <th>Placements</th>
-                <th>FaQs</th>
-                <th>ImageUrl</th>
+                <th>FaQs</th>            
             </tr> 
             <?php 
             while($row = $coursesSqlRes->fetch_assoc()) {?>
                 <tr>
                     <td><input class="tdCheckbox" id=<?php echo 'checkbox_'.$row['id'] ?> type="checkbox" name="select"></td> 
                     <td><?php echo $row['id']?></td>
+                    <td><img class="img-thumbnail" src="<?php echo $row['imageUrl']?>"></td> 
                     <td><?php echo $row['name']?></td>
                     <td><?php echo $row['overview']?></td>
                     <td><?php echo $row['highlights']?></td>
@@ -108,7 +109,7 @@ $coursesSqlRes = getCourses();
                     <td><?php echo $row['ify']?></td>
                     <td><?php echo $row['placements']?></td>
                     <td><?php echo $row['faqs']?></td>
-                    <td><img class="img-thumbnail" src="<?php echo $row['imageUrl']?>"></td>   
+                      
                 <tr> 
              <?php
             }

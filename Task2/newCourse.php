@@ -50,15 +50,15 @@ include 'session.php';
     </div>
     <div class="form-group">
     <label for="durationFullFoundation">Full Duration with Foundation (Years):</label>
-    <input type="text" class="form-control" name="durationFullFoundation">
+    <input type="number" min="0" value="0" class="form-control" name="durationFullFoundation">
     </div>
     <div class="form-group">
     <label for="durationPartMin">Minimum Part Duration (Years):</label>
-    <input type="text" class="form-control" name="durationPartMin">
+    <input type="number" min="0" value="0" class="form-control" name="durationPartMin">
     </div>
     <div class="form-group">
     <label for="durationPartMax">Maximum Part Duration (Years):</label>
-    <input type="text" class="form-control" name="durationPartMax">
+    <input type="number" min="0" value="0" class="form-control" name="durationPartMax">
     </div>
     <div class="form-group">
     <label for="startingPeriod">Starting Period:</label>
