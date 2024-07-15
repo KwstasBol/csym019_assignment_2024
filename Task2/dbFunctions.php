@@ -21,7 +21,7 @@ if ( !$mysqli -> query("SELECT  * FROM Users LIMIT 1")) {
     echo "creating";
     $sql = "CREATE TABLE Users (
             id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-            email VARCHAR(30) NOT NULL,
+            email VARCHAR(255) NOT NULL,
             password VARCHAR(255) NOT NULL
             )";
     
@@ -35,22 +35,22 @@ if ( !$mysqli -> query("SELECT  * FROM Courses LIMIT 1")) {
     echo "creating";
      $sql = "CREATE TABLE Courses (
             id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-            code VARCHAR(30) ,
-            codeWithFoundation VARCHAR(30) ,
+            code VARCHAR(255) ,
+            codeWithFoundation VARCHAR(255) ,
             undergraduate BOOLEAN ,
             durationFull INT ,
             durationFullFoundation INT ,
             durationPartMin INT ,
             durationPartMax INT ,
-            startingPeriod VARCHAR(30) ,
-            location VARCHAR(30) ,
-            subjectDomain VARCHAR(30) ,
-            name VARCHAR(30) ,
+            startingPeriod VARCHAR(255) ,
+            location VARCHAR(255) ,
+            subjectDomain VARCHAR(255) ,
+            name VARCHAR(255) ,
             overview VARCHAR(1000) ,
             highlights VARCHAR(1000) ,
             courseDetails VARCHAR(1000) ,
             entryRequirements VARCHAR(1000) ,
-            currency VARCHAR(30) ,
+            currency VARCHAR(50) ,
             priceUkFull DOUBLE ,
             priceUkPart DOUBLE ,
             priceUkPartCreditModules INT ,

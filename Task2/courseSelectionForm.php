@@ -45,12 +45,13 @@ $coursesSqlRes = getCourses();
         <br>
         <hr>
              <button class="btn btn-danger btn-sm" onclick="deleteSelectedCourses()">Delete</button></tr>
-        <table id ="coursesTable" class="table table-hover table-bordered">
+    
+        <table  id ="coursesTable" class="table table-hover table-bordered" >
 
             <tr> 
                 <th><input type="checkbox"  name="select" id="toggleAllCheckbox" onclick="toggleCheckboxes()"></th>
                 <th>Id</th>
-                 <th>ImageUrl</th>
+                <th>ImageUrl</th>
                 <th>Name</th>
                 <th>Overview</th>
                 <th>Highlights</th>

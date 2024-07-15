@@ -1,10 +1,13 @@
-<!DOCTYPE html>
 
+
+<!DOCTYPE html>
+<!-- The html file of the Task 1 -->
 <html>
     <head>
         <title>TASK 1</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Add the dependencies such as bootstrap and JQUERY from the provided cdn links -->
         <link rel="stylesheet" href="course.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -14,9 +17,11 @@
 
     </head>
     <body>
+        <!-- Add the bootstrap navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Courses - Task 1</a>
- <div>
+        <a class="navbar-brand" href="#">Courses - Task 1</a>
+        <div>
+        <!-- Add the currency dropdown as a HTML select element with options -->
         <label for="currencies">Choose currency:</label>
         <select name= "currencies" id="currencySelector" onChange="changeCurrency()">
          <option value="pound">GBP</option>
@@ -24,13 +29,13 @@
          <option value="dollar">USD</option>
         </select>
         </div>
-
-</nav>
-        
+        </nav>     
         <hr>
+        <!-- Add the table where the data will be populated from the .js file and set the bootstrap class in order to be hoverable with borders -->
         <table id ="coursesTable" class="table table-hover table-bordered" >
             <tr> 
-                <th>Name</th> 
+                <th>Name</th>
+                <th>Overview</th>
                 <th>Ucas Code</th> 
                 <th>Ucas Code with Foundation</th> 
                 <th>Price UK</th> 
@@ -38,9 +43,7 @@
                 <th>Starting</th>
                 <th>Location</th>   
                 <th>Subject Domain</th>                    
-            </tr> 
-            
+            </tr>           
         </table>
-
     </body>
 </html>
