@@ -1,8 +1,9 @@
 <?php
 
+//Connect to the database
 $servername = "localhost";
 $username = "admin";
-$password = "csym019";
+$password = "123";
 $dbname = "csym019_assignment_2024";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -10,8 +11,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
+//Create php variables out of the AJAX post request
 $code = $_POST['code'];
 $codeWithFoundation = $_POST['codeWithFoundation'];
+//Check that it is a boolean
 $undergraduate = filter_var($_POST['undergraduate'], FILTER_VALIDATE_BOOLEAN);
 $durationFull = $_POST['durationFull'];
 $durationFullFoundation = $_POST['durationFullFoundation'];
@@ -40,6 +43,7 @@ $faqs = $_POST['faqs'];
 $imageUrl = $_POST['imageUrl'];
 
 
+//Prepare the sql query to instert values in the Db
 $sql = "INSERT INTO Courses (code, codeWithFoundation, undergraduate, durationFull,durationFullFoundation,durationPartMin,
                              durationPartMax,startingPeriod,location,subjectDomain,name,overview,highlights,courseDetails,
                              entryRequirements,currency,priceUkFull,priceUkPart,priceUkPartCreditModules,priceUkIntegrated,
@@ -57,7 +61,7 @@ $sql = "INSERT INTO Courses (code, codeWithFoundation, undergraduate, durationFu
 
 echo $sql;
 if ($conn->query($sql) === TRUE) {
-    //echo "New record created successfully";
+    //If the addition is successfull, navigate to the homepage
     header('Location: courseSelectionForm.php');
 } else {    echo "Error: " . $sql . "<br>" . $conn->error; } $conn->close(); 
 

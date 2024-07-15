@@ -1,6 +1,7 @@
 
 <?php
 
+//include the following php files in order to have the session and also the functions file
 include 'dbFunctions.php';
 include 'session.php';
 //Create database tables only if they do not exist
@@ -44,8 +45,10 @@ $coursesSqlRes = getCourses();
 
         <br>
         <hr>
+        <!-- the button to delete the courses -->
              <button class="btn btn-danger btn-sm" onclick="deleteSelectedCourses()">Delete</button></tr>
     
+      <!-- the table of the courses that is populated with php code -->
         <table  id ="coursesTable" class="table table-hover table-bordered" >
 
             <tr> 
@@ -79,9 +82,12 @@ $coursesSqlRes = getCourses();
                 <th>Placements</th>
                 <th>FaQs</th>            
             </tr> 
+            
+              <!-- traverse the list out of the php fetch result and for every item, create a tr with a td field for every course property-->
             <?php 
             while($row = $coursesSqlRes->fetch_assoc()) {?>
                 <tr>
+                      <!-- create a class with name 'checkbox_{id}' in order to know what to delete afterwards -->
                     <td><input class="tdCheckbox" id=<?php echo 'checkbox_'.$row['id'] ?> type="checkbox" name="select"></td> 
                     <td><?php echo $row['id']?></td>
                     <td><img class="img-thumbnail" src="<?php echo $row['imageUrl']?>"></td> 

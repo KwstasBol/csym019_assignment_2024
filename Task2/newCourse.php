@@ -32,7 +32,7 @@ include 'session.php';
 </nav>
  
 <div class="container">
-  <!-- Content here -->
+  <!-- This is the form that is used to create a new course, and sends a post request to insertCourse in order to be persisted in db-->
   <br>
   <h3>Add a new course</h3>
   <form action="insertCourse.php" method="POST">

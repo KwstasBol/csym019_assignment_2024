@@ -1,15 +1,21 @@
 <?php
  
+//Start the session
   session_start();
 
 
+  //Check for the credentials that were sent via AJAX Post
    if($_SERVER["REQUEST_METHOD"] == "POST") {
 $email = $_POST['email'];
 $password = $_POST['password'];
+//calculate the hash
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
+//Check the password and correlate that they are the same with hash
 $hash = '$2y$10$rf0WIbwCzyMkiUyPEjfcIOBwwjeqANfGMFnPqjLC7t4w4PmStUqfa';
 $passwordIsValid = password_verify( $password,$hash);
+
+//If it succeeds, add to the global SESSION property the email as login user in order to know who is logined
 if ($passwordIsValid) { 
         $_SESSION['login_user'] = $email;
        

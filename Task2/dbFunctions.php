@@ -1,11 +1,13 @@
 <?php
 
+//The basic file for the db functions which communicate with the phphadmin database
 
 
+//The function that creates the tables of courses and users if they do not exist in the first place (Db seeding)
 function createDbTables(){
 $servername = "localhost";
 $username = "admin";
-$password = "csym019";
+$password = "123";
 $dbname = "csym019_assignment_2024";    
 $mysqli  = new mysqli($servername, $username, $password, $dbname);
 
@@ -69,16 +71,16 @@ if ( !$mysqli -> query("SELECT  * FROM Courses LIMIT 1")) {
     echo "Error creating table: " . $mysqli->error; } $mysqli->close();    
 }
 
-
+//Close the connection
 $mysqli -> close();
     
 }
 
-
+//Function that returns the courses
 function getCourses(){
 $servername = "localhost";
 $username = "admin";
-$password = "csym019";
+$password = "123";
 $dbname = "csym019_assignment_2024";    
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 
@@ -86,6 +88,7 @@ if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
 }
 
+//Build the basic sql and get the result
 $sql = "SELECT * FROM Courses";
 
 $result = $mysqli->query($sql);
